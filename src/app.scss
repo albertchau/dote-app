@@ -1,0 +1,64 @@
+@mixin vertical-layout() {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@mixin horizontal-layout() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@mixin vertical-layout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@mixin horizontal-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@font-face {
+  font-family: "Cerebri Sans";
+  src: url("./fonts/CerebriSans-Regular.woff2") format("woff2");
+}
+
+@mixin default-font() {
+  color: #1A1F1E;
+  font-family: "Cerebri Sans", serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+
+@mixin large-font() {
+  color: #1A1F1E;
+  font-family: "Cerebri Sans", serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.57px;
+  line-height: 41px;
+}
+
+.dote-app {
+  @include vertical-layout;
+  @include default-font;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7FAFA;
+}
+
+.content-container {
+  width: 1080px;
+  background-color: #FFFFFF;
+  padding-right: 160px;
+  padding-left: 160px;
+  padding-top: 20px;
+  border-radius: 0 0 10px 10px;
+}

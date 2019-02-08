@@ -1,0 +1,55 @@
+@import '../../app';
+
+.bottom-part-container {
+  @include vertical-layout;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bottom-part-wrapper {
+  @include horizontal-layout;
+}
+
+.company-info-col-container {
+  @include vertical-layout
+}
+
+.company-info-col-title-text {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.company-info-col-link-text-container {
+  font-size: 13px;
+  > div {
+    margin-bottom: 15px;
+  }
+}
+
+.bottom-part-terms {
+  @include horizontal-layout;
+  > div {
+    margin-right: 40px;
+  }
+}
+
+.icon-instagram {
+  background-image: url(../../images/instagram-logo.png);
+  width: 23px;
+  height: 23px;
+}
+.icon-facebook {
+  background-image: url(../../images/facebook-logo.png);
+  width: 24px;
+  height: 24px;
+}
+.icon-pinterest {
+  background-image: url(../../images/pinterest-logo.png);
+  width: 24px;
+  height: 24px;
+}
+.icon-twitter {
+  background-image: url(../../images/twitter-logo.png);
+  width: 24px;
+  height: 24px;
+}
